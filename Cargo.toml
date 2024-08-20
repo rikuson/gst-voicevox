@@ -1,0 +1,21 @@
+[package]
+name = "gst-voicevoxtts"
+authors = ["Riku Takeuchi <rikuson@users.noreply.github.com>"]
+repository = "https://github.com/rikuson/gst-voicevox"
+license = "MIT"
+description = "A GStreamer Text-to-speech element using VOICEVOX"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "gstvoicevoxtts"
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
+[dependencies]
+gst = { version = "0.23.0", package = "gstreamer" }
+gst-base = { version = "0.23.0", package = "gstreamer-base" }
+gst-audio = { version = "0.23.0", package = "gstreamer-audio" }
+
+[build-dependencies]
+gst-plugin-version-helper = "0.8.2"
