@@ -1,5 +1,7 @@
 use gst::glib;
 
+mod tts;
+
 gst::plugin_define!(
     voicevoxtts,
     env!("CARGO_PKG_DESCRIPTION"),
@@ -13,5 +15,6 @@ gst::plugin_define!(
 );
 
 fn plugin_init(plugin: &gst::Plugin) -> Result<(), glib::BoolError> {
+    tts::register(plugin)?;
     Ok(())
 }

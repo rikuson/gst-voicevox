@@ -16,6 +16,8 @@ path = "src/lib.rs"
 gst = { version = "0.23.0", package = "gstreamer" }
 gst-base = { version = "0.23.0", package = "gstreamer-base" }
 gst-audio = { version = "0.23.0", package = "gstreamer-audio" }
+vvcore = "0.0.2"
+once_cell = "1.19.0"
 
 [build-dependencies]
 gst-plugin-version-helper = "0.8.2"
