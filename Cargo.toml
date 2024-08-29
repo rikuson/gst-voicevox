@@ -1,5 +1,5 @@
 [package]
-name = "gst-voicevoxtts"
+name = "gst-voicevox"
 authors = ["Riku Takeuchi <rikuson@users.noreply.github.com>"]
 repository = "https://github.com/rikuson/gst-voicevox"
 license = "MIT"
@@ -8,7 +8,7 @@ version = "0.1.0"
 edition = "2021"
 
 [lib]
-name = "gstvoicevoxtts"
+name = "gstvoicevox"
 crate-type = ["cdylib"]
 path = "src/lib.rs"
 

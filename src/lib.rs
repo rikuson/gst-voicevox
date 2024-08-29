@@ -3,7 +3,7 @@ use gst::glib;
 mod tts;
 
 gst::plugin_define!(
-    voicevoxtts,
+    voicevox,
     env!("CARGO_PKG_DESCRIPTION"),
     plugin_init,
     concat!(env!("CARGO_PKG_VERSION"), "-", env!("COMMIT_ID")),

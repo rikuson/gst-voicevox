@@ -11,7 +11,7 @@ use wavers::{ReadSeek, Wav};
 
 static CAT: Lazy<gst::DebugCategory> = Lazy::new(|| {
     gst::DebugCategory::new(
-        "voicevoxtts",
+        "voicevox",
         gst::DebugColorFlags::empty(),
         Some("Text to speech filter using VOICEVOX"),
     )
@@ -49,7 +49,7 @@ impl ElementImpl for TTS {
     fn metadata() -> Option<&'static gst::subclass::ElementMetadata> {
         static ELEMENT_METADATA: Lazy<gst::subclass::ElementMetadata> = Lazy::new(|| {
             gst::subclass::ElementMetadata::new(
-                "VOICEVOX TTS",
+                "VOICEVOX",
                 "Converter/Text/Audio",
                 "Text to speech filter using VOICEVOX",
                 "Riku Takeuchi <rikuson@users.noreply.github.com>",
@@ -141,7 +141,7 @@ impl BaseTransformImpl for TTS {
 }
 #[glib::object_subclass]
 impl ObjectSubclass for TTS {
-    const NAME: &'static str = "GstVoiceVoxTTS";
+    const NAME: &'static str = "GstVoiceVox";
     type Type = super::TTS;
     type ParentType = BaseTransform;
 }

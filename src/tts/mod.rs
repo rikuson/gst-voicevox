@@ -13,7 +13,7 @@ glib::wrapper! {
 pub fn register(plugin: &gst::Plugin) -> Result<(), glib::BoolError> {
     gst::Element::register(
         Some(plugin),
-        "voicevoxtts",
+        "voicevox",
         gst::Rank::NONE,
         TTS::static_type(),
     )

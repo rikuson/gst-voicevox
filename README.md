@@ -16,5 +16,5 @@ export GST_PLUGIN_PATH=`pwd`/target/release
 [VOICEVOX CORE](https://github.com/VOICEVOX/voicevox_core) must be installed.
 
 ```shell
-gst-launch-1.0 --quiet fdsrc ! 'text/x-raw,format=utf8' ! voicevoxtts ! autoaudiosink
+gst-launch-1.0 --quiet fdsrc ! 'text/x-raw,format=utf8' ! voicevox ! autoaudiosink
 ```
